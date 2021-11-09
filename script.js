@@ -1,3 +1,24 @@
+//array for cart
+let cart = [];
+
+function addItem(){
+    let item ={
+        name: "English Ivy",
+        price: 4.99
+    };
+
+    cart.push(item);
+}
+
+function checkOut(){
+    let total = 0;
+    for(let item of cart){
+        total += item.price;
+        console.log(`${item.name} for ${item.price} dollars`);
+    }
+    console.log(`Grand total: ${total} dollars.`)
+}
+
 //array of objects in store
 let plants = [
     {
